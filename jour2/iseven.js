@@ -4,12 +4,12 @@ var chif = 5;
 
 num(chif);
 
-function num(iseven){
+function num(iseven) {
 
-     if(iseven % 13 === 0){
-         console.log('true');
+    if (iseven % 13 === 0) {
+        console.log('true');
 
-    }else {
+    } else {
         console.log('false');
     }
 

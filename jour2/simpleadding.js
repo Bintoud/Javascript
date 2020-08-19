@@ -3,27 +3,31 @@
 var number = 140;
 var littlenum = 12;
 
-function simpleadding (num) {
+function simpleadding(num) {
 
     var result = 0;
 
-    for(var i = 0; i <= num; i++){
+    for (var i = 0; i <= num; i++) {
 
-        result = result +i;
+        result = result + i;
     }
 
-    return  result;
- 
+    return result;
+
 }
 
- //   const number =140;
- //   const littlenum =12;
- //   simpleadding(number, littlenum );
-  console.log(simpleadding (number, littlenum)) ;
+console.log(simpleadding(number));
+console.log(simpleadding(littlenum));
 
-  // je ne sais pas pourquoi ça m'affiche que le résultat de 140 alors que les deux fonctionnes ?
-  
-  
+ //Ecrire une  fonction(num);
+ // qui additionne tout les nombres en partant de,
+ // 1 jusqu'au nombre num ( donc jai une boucle for);
+ // si jai pour argument 4 alors ma fonction me 
+ // retournera 10 car 1 + 2 + 3 + 4 = 10; 
+
+
+
+
 
 
 

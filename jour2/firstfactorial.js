@@ -1,37 +1,27 @@
 'use strict'
 
 
-    /*  si num = 4 return 4*3*2*1 = 24;
-        si num = 8*7*6*5*4*3*2*1 = 40320;
-         utilise condition;
-    */   
-    
-/*
-    let multiplication4 = 4;
-    let multiplication8 = 8;
-    let allmulti = multiplication4 + multiplication8
-    let num = allmulti
+/*  Ecrire une fonction qui fonctionne de manière itérative,
+    qui prend un nombre (num) en paramètre, et qui nous retournera 
+    la factorielle de celui ci. (e.g. si num = 4, return (4 * 3 * 2 * 1)).
+    Pour vos tests, votre num sera compris entre 1 et 18, et sera toujours un entier.
+    si num = 4 return 4*3*2*1 = 24;
+    si num = 8*7*6*5*4*3*2*1 = 40320;
+     utilise la boucle for  car on va parcourir les nombres
+*/
 
-    function firstfactorial(num)
-            return
-        if (num <= 1)
-            return 1;
-        return num * num(-1) ;   
+
+
+function firstFactorial(num) {
+    var result = 1;
+
+    for (var i = 1; i <= num; i++) {
+
+        result *= i;
     }
 
-} 
+    return result;
+}
 
-    var result = firstfactorial
-*/
-//console.log(num);
- 
-/*function create() {
-    return function(n) {
-       if (n <= 1)
-          return 1;
-       return n * arguments.callee(n - 1);
-    };
- }
- 
- var result = create()(5); // returns 120 (5 * 4 * 3 * 2 * 1)
-*/
+console.log(firstFactorial(4));
+console.log(firstFactorial(8));

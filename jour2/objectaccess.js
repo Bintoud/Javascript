@@ -4,7 +4,7 @@
     var person= {
         
         name : 'robin',
-        age : 26,
+         age : 26,
         city : 'bordeaux'
     };
 

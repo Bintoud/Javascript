@@ -5,19 +5,19 @@ var mult = 3;
 
 
 function powerfunciter(num, power) {
-    var result = 1
-  
-    for ( var i = 0; i < power ; i++){
-      result *= num; 
-    
-    } 
+  var result = 1
 
-    return result;
+  for (var i = 0; i < power; i++) {
+    result *= num;
 
   }
 
-  console.log(powerfunciter(nombre, mult));
-  
+  return result;
+
+}
+
+console.log(powerfunciter(nombre, mult));
+
 
 
 

@@ -1,24 +1,28 @@
 'use strict'
 
+/* j'écrie ma fonction prenant en paramète un string
+qui nous renverra cette string en ordre inverse;
+ex : konexio / output oixenok;
+*La propriété length représente la longueur d'une chaine de caractères
+La méthode charAt() renvoie une nouvelle chaîne contenant le caractère
+(ou, plus précisément, le point de code UTF-16) à la position indiquée en argument.
+*/
 
-function firstreverse (str) {
 
-    console.log(str.split('').reverse().join());    
+function firstreverse(str) {
+    var result = ('');
+
+    for (var i = str.length; i >= 0; i--) {
+
+        result += str.charAt(i);
+
+    }
+
+    return result;
+
 }
 
-const string = "hello world and coders";
+console.log(firstReverse('Hello World and Coders'));
+console.log(firstReverse('konexio'));
+console.log(firstReverse('I Love Code'));
 
-     firstreverse(string);
-
-
-
-
-
-
- 
-// (si je fais console.log(str.split()) ça vas me faire  mon string dans un tableau;)
- // 1: nom de ma function firstreverse/ argument (str) = chaine de caractère
- // 2: la function va renvoyer  dans la console la chaine de caractère
- // 3: pour faire un reverse il faut que chaque lettre soit un index meme les espaces
- //  on ajoute à split un separateur(paramètre('')vide) pour créer chaque caractère sous forme d'index
- // ensuite on ajoute join pour réunir les index sous forme de caractère
