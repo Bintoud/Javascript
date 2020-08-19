@@ -1,17 +1,25 @@
 'use strict'
 
+  /* récuperer la parametre dans la variable str et retouner
+  un string avec les lettres  en ordre alpha;
+  exemple hello devient ehllo;
 
-function alphabetsoup(str){
-    
-    console.log(str.split('').reverse().join());
-
-}
-   // const nomdeform = 'konexio';
-    //const expression = 'hooplah';
-
-     alphabetsoup(nomdeform, expression);
+  */
 
 
+  function alphabetsoup(str) {
+    var alpha = 'string';
+    for (var i = 0; i < alpha.length; i++) {
+      console.log('hello'[i]) ;{
+    // a partir de là ça me fait hello lettre en dessous de l'autre;
+      console.log(str.charAt);
+       
+     }  
+    }
+  
+} 
+
+      console.log(alphabetsoup('hello'));
 
 
 // (si je fais console.log(str.split()) ça vas me faire  mon string dans un tableau;)
@@ -21,3 +29,6 @@ function alphabetsoup(str){
  //  on ajoute à split un separateur(paramètre('')vide) pour créer chaque caractère sous forme d'index
  // ensuite on ajoute join pour réunir les index sous forme de caractère
  // il faut faire une boucle for pour l'exercice
+
+
+  
