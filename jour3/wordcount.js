@@ -4,6 +4,9 @@
     objectif: Retourner le nbr de mots d'une string 
     Indice : convertir la liste de mots en une liste 
     avec pour s'éparateur l'espace peut aider;
+    function vowelcount(str) {
+    return str.split(" ").length;
+}
 
 */
 

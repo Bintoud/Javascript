@@ -63,5 +63,6 @@ console.log(swapCase('Konexio Developer!'));
    (J'ai utilisez la méthode charCodeAt() pour trouver le code ASCII d'un caractère,
    ainsi retourner une chaine de caractère;
    Dans ma 3e fonction: j'ai besoin d'un tableau pour utiliser la méthode push et join
+   pour inverser les élément de mon tableau en gros maj devient mini
 
 */

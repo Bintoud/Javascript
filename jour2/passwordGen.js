@@ -39,6 +39,6 @@ function passwordGen(num) {
 
 }
 
-console.log(passwordGen(5));
+console.log(passwordGen(8));
 
 

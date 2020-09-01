@@ -35,3 +35,16 @@ console.log(letterCount('Hello apple pie', 'p'));
    5 the end j'appelle ma fonction pour voir le résultat sur ma console.
 */   
 
+//Je vais transformer ma phrase en tableau de mots
+
+// Pour chaque mots je dois parcourir lettre par lettre et compter les lettres identique
+//  Comment faire pour compter les lettres identique dans mon mots
+//      Pour chaque lettres je dois enregistrer le nombres d'occurences
+//          Je peux l'enregistrer dans un objet qui a pour clefs la lettre et pour valeur le nombre d'occurence 
+//          Maintenant pour comparer mes compteurs d'objet, je vais additioner les valeurs sup à 1
+//      Je dois stoker le nombre dans une variable
+//      Ce nombre je vais le comparer avec le prochain nombre
+//      Si le prochain nombre est superieur
+//          Je stock le mot dans le resultat (jecrase le resultat precedent)
+
+

@@ -6,7 +6,26 @@
 */
 
 
+function passwordGen(num) {
+    var min = 65;
+    var max = 90;
+    var pass = '';
 
+    if (num > 15) {
+        return 'you password need to be less than 15';
+    }
 
+    if (num < 6) {
+        return 'you password need to be more than 6';
+    }
 
+    for (var i = 0; i < num; i++) {
+        var index = Math.floor((Math.random() * (max - min) + min));
+        pass = pass + String.fromCharCode(index);
+    }
 
+    return pass;
+
+}
+
+console.log(passwordGen(8));
