@@ -1,31 +1,40 @@
 'use strict'
 
-
 var prompt = require('prompt');
 
 prompt.start();
 
-function nombreMistère(num) {
-  
-  prompt.get({ name: 'nbr', description: 'Quel est le nombre?' }, function (
+function moreOrLess(nombreMystere) {
+  var borneMax = 100;
+  var essai;
+  var nombreMystere = Math.floor(Math.random() * borneMax);
+  var compteur = 1;
+  while (!unEssai(nombreMystere)) {
+    compteur = compteur + 1;
+  }
+
+  prompt.get({ name: 'q', description: 'quel est le nombre mystère?' }, function (
     err,
     result
-  ){
-    if (result.nbr === num) {
-      console.log('c/est ça le nombre mystère');
-    } 
-    else if(result.nbr) {
-      console.log('plus');
+  ) {
+
+    if (result.q === 'y' || result.q === 'n') {
+      console.log('Answer received');
     }
-    else if(result.nbr) {
-      console.log('moin');
+    if (essai == nombreMystere) {
+      return true;
     }
     else {
-      nombreMistère();
-    }
-  });
+      if (essai < nombreMystere) {
+        console.log(essai + " moin");
+      }
+      else {
+        if (essai > nombreMystere {
+      console.log(essai + " plus ");
+      }
+      else {
+        moreOrLess();{
+    };
+  } 
 
-}
-      nombreMistère();
-
-
+moreOrLess();
