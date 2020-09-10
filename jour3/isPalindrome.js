@@ -25,7 +25,6 @@ function palindrome(str) {
 
 }
 
-
 console.log(palindrome('never odd or even'));
 console.log(palindrome('eye'));
 
