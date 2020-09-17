@@ -1,51 +1,82 @@
 'use strict'
 
+
+
 var prompt = require('prompt');
-
+                                // methode pour app prompt plusieur fois.
 prompt.start();
-/*
-function moreOrLess(nombreMystere) {
-  var borneMax = 100;
-  var essai;
-  var nombreMystere = Math.floor(Math.random() * borneMax);
-  var compteur = 1;
-  while (!moreOrLess(nombreMystere));
-  compteur = compteur + 1;
-}
 
-prompt.get({ name: 'num' , decription: 'quel est le nombre mystere?'},
-  function (err, result) {
-    if (result.num === 
-  } */
-
-
+var borneMax = 100;
+var borneMin = 1;
+var monnombre = Math.floor(Math.random() * (borneMax - borneMin + 1)) //pour définir un nombre aléatoire entre 1 et 100;
+console.log(monnombre);  
 
 function displayPrompt() {
-  // var borneMax = 100;
-  //var borneMin = 1;
-  var monnombre = 45;
 
-  prompt.get({ name: 'q', description: 'quel est le nombre mystere?' }, function (
+  prompt.get({ name: 'placeholder', description: 'quel est le nombre mystere?' }, function (
     err,
     result
   ) {
 
-    //for (let index = 0; index < 100 || index > 1; index++) {
-    //const element = Math.floor(Math.random([index]));
+    var other
+    other = parseInt(result['placeholder'])
+    console.log(typeof other)
 
-
-    if (result.q === Math.floor(Math.random()) || result.q === Math.floor(Math.random())) {
+    if (other === monnombre) {
       console.log('Answer received');
 
-    } else if (monnombre <= 100) {
+    } else if (other < monnombre) {
       console.log('c/est moin');
-
-    } else if (monnombre >= 1) {
-      console.log('c/est plus');
     } else {
-      displayPrompt();
+        console.log('c\'est plus!')
+        displayPrompt();
     }
   });
 }
 
-displayPrompt(); 
+displayPrompt();   
+
+
+/*Description. La fonction parseInt() convertit le premier argument en une chaîne,
+ l'analyse et renvoie un entier ou NaN . Si la valeur renvoyée n'est pas NaN , 
+ ce sera l'entier représentant le nombre contenu dans la chaîne dans la base donnée.20 juil. 2019 */
+
+/* 
+var min = 1
+var max = 100
+var entier = Math.floor(Math.random() * (max - min + 1)) //+ min; 
+console.log(entier)
+
+var prompt = require('prompt');
+
+prompt.start();
+
+function displayPrompt() {
+
+  prompt.get({ name: 'placeholder', description: 'Quel est le chiffre mystère?' }, function (err,result) 
+  
+  {
+
+    var convert
+    convert = parseInt(result['placeholder'])
+    console.log(typeof convert)
+
+    if (convert === entier) {
+      console.log('Bravo vous avez trouvé le nombre mystère!');
+
+    } else if (convert > entier) {
+      console.log('c\'est moins!')
+      displayPrompt();
+
+    } else {
+      console.log('c\'est plus!')
+      displayPrompt();
+    }
+  });
+ 
+}
+displayPrompt();
+
+*/
+
+

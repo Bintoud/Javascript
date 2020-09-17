@@ -21,5 +21,5 @@ console.log(arr2);
 /* solution 1
  ligne 6 = je crée une var qui stock mon array (var arr) 
  j'utilise mon tableau (arr) avec la méthode .map() qui vas prendre en paramètre
- une fonction de callback qui prend en parametre un num 
- dans mon array je retourne mon élément en additionnant chaque élément par 1; */
+ une fonction de callback qui prend en parametre un num dans mon array 
+ je retourne mon élément en additionnant chaque élément par 1; */
